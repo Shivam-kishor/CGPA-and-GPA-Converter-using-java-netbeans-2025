@@ -8,11 +8,11 @@
 <body>
     <div id="container" style="width:100vw; height:100vh;"></div>
     <script type="module">
-        // Initialize the Java environment
+        // Start the environment
         await cheerpjInit();
-        // Create the display area
+        // Create the display in the 'container' div
         cheerpjCreateDisplay(-1, -1, document.getElementById("container"));
-        // Run your specific JAR file
+        // This MUST be the exact name of your file on GitHub
         await cheerpjRunJar("/app/calculator.jar");
     </script>
 </body>
