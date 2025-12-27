@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>My CGPA Calculator</title>
+    <script src="https://cjrtnc.leaningtech.com/3.0/loader.js"></script>
+</head>
+<body>
+    <div id="container" style="width:100vw; height:100vh;"></div>
+    <script type="module">
+        // Initialize the Java environment
+        await cheerpjInit();
+        // Create the display area
+        cheerpjCreateDisplay(-1, -1, document.getElementById("container"));
+        // Run your specific JAR file
+        await cheerpjRunJar("/app/calculator.jar");
+    </script>
+</body>
+</html>
